@@ -98,3 +98,9 @@ figcaption{
     max-width: 100%;
     columns: 20rem;
 }
+
+@media screen (max-width: 1200px) {
+    #aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
