@@ -1,0 +1,106 @@
+/* Journey to the Center of the Earth Practicum */
+/* Maryam Abdulwahab */
+
+/* https://css-tricks.com/the-fixed-background-attachment-hack/ (background gradient help) */
+/* https://www.w3schools.com/cssref/css3_pr_opacity.asp (opacity helper) */
+
+
+body {
+background: linear-gradient(#765729, #000000);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+height: 50vh;
+}
+
+header{
+    background-image:url("cave.jpg");
+}
+
+
+h1 {
+    background-image: url("img/cave.jpgs");
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    opacity: 0.75;
+}
+
+/* https://www.youtube.com/watch?v=5Uz33vo4GoQ (float helper */
+
+ img {
+    float: left;
+    width: 150px;
+    height: 200px;
+    padding: 10px
+}
+
+/* https://www.w3schools.com/css/css_inline-block.asp */
+
+nav {
+background-color: white;
+opacity: 0.75;
+list-style-type: none;
+text-align: center;
+border: 3.5px double #886644;
+box-shadow: 3.5px 3.5px 3.5px .5px rgba(0,0,0,10) inset;
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+#header, footer {
+    background-color: rgba(255,255,255);
+    opacity:0.75;
+    text-align: center;
+    padding:10px;
+    border: 3.5px solid #886644;
+    border-radius: 30px 15px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(0,0,0,10) inset;
+  
+}
+
+
+/* http://www.csstothepoint.com/dottedunderline.htm (dotted line help) */
+
+h2 {
+    background-color: white;
+    opacity: 0.75;
+    font-weight: bold;
+    border: 5px solid #886644;
+    border-bottom: 3px dotted;
+}
+
+
+aside{
+    background-color: white;
+    opacity: 0.75;
+    display: grid;
+    grid-template-rows : 2fr 2fr 2fr;
+}
+
+@media screen and (min-width: 65em){
+   grid-template-columns: 1fr 1fr 1fr; 
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: 2rem;
+    margin-left: 1rem;
+}
+
+#aside div {
+    max-width: 100%;
+    columns: 20rem;
+}
+
+@media screen (max-width: 1200px) {
+    #aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
