@@ -80,6 +80,21 @@ aside{
     background-color: white;
     opacity: 0.75;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows : 2fr 2fr 2fr;
 }
 
+@media screen and (min-width: 65em){
+   grid-template-columns: 1fr 1fr 1fr; 
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: 2rem;
+    margin-left: 1rem;
+}
+
+#aside div {
+    max-width: 100%;
+    columns: 20rem;
+}
